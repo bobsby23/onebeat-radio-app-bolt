@@ -1,0 +1,130 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 100vh;
+}
+
+.main-player {
+  flex: 0 0 60%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 svg {
+  margin-right: 10px;
+}
+
+.radio-player {
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.play-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.play-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.play-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.current-track {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.current-track a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.current-track a:hover {
+  color: #45a049;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-style: italic;
+}
+
+.station-card {
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.station-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.station-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.station-card h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.station-link {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.station-link:hover {
+  background-color: #45a049;
+}
